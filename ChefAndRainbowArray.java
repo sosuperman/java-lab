@@ -30,7 +30,7 @@ public class ChefAndRainbowArray {
             
             for(int i = 0; i<n/2 ; i++){
                 //System.out.println(a[i]+","+a[i+1]);
-                if(((a[i+1] - a[i]) != 0 && (a[i+1] - a[i]) !=1))//Checking the case of missing any sequence
+                if((Math.abs(a[i+1] - a[i]) != 0 && Math.abs(a[i+1] - a[i]) !=1))//Checking the case of missing any sequence
                 {
                     //System.out.println(a[i]+","+a[i+1]);
                     
@@ -40,6 +40,8 @@ public class ChefAndRainbowArray {
             }
             if(Arrays.equals(a,aCopy))//Whether the array is palindrome or not after checking all conditions
                 System.out.println("yes");
+            else
+                System.out.println("no");
             
         }
     }
